@@ -4,7 +4,7 @@
   "description": "Education Portal",
   "main": "app.js",
   "scripts": {
-    "start" : "nodemon app.js"
+    "start": "nodemon app.js"
   },
   "keywords": [
     "education",
@@ -16,6 +16,7 @@
   "author": "Emrecan Ay",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.1"
   },
   "devDependencies": {
