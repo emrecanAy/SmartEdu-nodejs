@@ -10,5 +10,7 @@ router
   .post(roleMiddleware(['teacher', 'admin']), coursesController.createCourse);
 router.route('/').get(coursesController.getAllCourses);
 router.route('/:slug').get(coursesController.getCourse);
+router.route('/enroll').post(coursesController.enrollCourse);
+router.route('/release').post(coursesController.releaseCourse);
 
 module.exports = router;
